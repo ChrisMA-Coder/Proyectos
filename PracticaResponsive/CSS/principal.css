@@ -9,6 +9,9 @@ a{
 h2{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 header{
     display: flex;
     min-height: 200px;
@@ -37,19 +40,68 @@ nav a:hover{
 .definition{
     color: white;
 }
-
 @media(min-width:850px){
     header{
         font-size:26px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
-
+    .container{
+        padding: 50px;
+    }
+    .container div {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
 }
 @media (max-width:700px) {
     header{
         flex-direction: column;
     }
+    .container{
+        flex-direction: column;
+        width: auto;
+    }
+    .container div img{
+        max-height: 150px;
+    }
     nav{
         padding: 10px 0px;
     }
+    .yo img{
+        max-height:200px;
+        padding-top: 2px;
+    }
+    .yo p{
+        font-size: 12px;
+    }
+}
+.container{
+    background-color: bisque;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 200px;
+
+}
+.container div{
+    text-align: center;
+}
+.container div img{
+    height: 200px;
+    background: transparent;
+    display: inline;
+    padding-top: 2px;
+}
+.yo img{
+    height: 350px;
+    display: flex;
+}
+.yo{
+    justify-content: space-between;
+    display: inline-flex;
+    text-align: center;
+}
+.yo p{
+    justify-content: center;
 }
