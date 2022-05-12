@@ -94,15 +94,18 @@ nav a:hover{
     padding-top: 2px;
 }
 .yo img{
-    height: 350px;
-    display: flex;
+    max-height: 250px;
 }
 .yo{
     justify-content: space-between;
-    display:flex;
+    display: inline-flex;
     text-align: center;
 }
-.yo h2{
-    justify-content: center;
-    border: 1px solid
+html{
+    display: inline-block;
 }
+.yo h2{
+    display: block;
+    text-align: center;
+}
+
