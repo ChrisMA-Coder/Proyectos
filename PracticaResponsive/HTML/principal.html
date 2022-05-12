@@ -8,37 +8,89 @@
     <link rel="stylesheet" href="../CSS/principal.css">
 </head>
 <body>
-    <!-- Encabezado-->
+
+    <!--=========Encabezado========-->
     <header>
-        <a href="#" class="logo">
-            <img src="../SRC/My project.png" >
-            <h2 class="nombre-autor">¡Hola Soy Christian!</h2>
-        </a>
-        <div>
-            <h2 class="definition">Programador Junior</h2>
-            <h2 class="definition">Programador Web</h2>
+        <div class="container">
+            <div>
+                <a href="#" class="chris">
+                    ChrisCoder
+                </a>
+            </div>
+            <nav class="nav"> 
+                <a href="" class="nav-link">Inicio</a>
+                <a href="#yo" class="nav-link">Sobre mi</a>
+                <a href="" class="nav-link">Contacto</a>
+            </nav>
         </div>
-        <nav>
-            
-            <a href="" class="nav-link">Inicio</a>
-            <a href="#sobremi" class="nav-link">Sobre mi</a>
-            <a href="" class="nav-link">Contacto</a>
-        </nav>
-        
     </header>
-    <main>
-        <div class="yo">
-            <img src="../SRC/yo.jpg">
-            <h2 class="yo">Hola soy Christian, Peruano de 19 años</h2>
+    <!--=======Presentacion========-->
+    <section>
+        <div class="titulo">
+            <h1>Hola, Soy Christian.</h1>
         </div>
-        <div class="container" id="sobremi">
-            <div>              
-                <img src="../SRC/cssLogo.png">
-                <img src="../SRC/htmlLogo.png">
-                <img src="../SRC/jsLogo.png">
-                <img src="../SRC/pythonLogo.png">
+        
+        <div class="container-info" id="yo">
+            <div class="yo">
+                <img src="../SRC/yo.jpg" alt="">
+                
+            </div>
+            <div class="info-yo">
+                <p>Desarrollador Web <br> Desarrollador Junior</p>
+            </div>
+            
+        </div>
+    </section>
+    <!--=========Lenguajes============-->
+    <section class="lenguajes">
+        <div class="titulo">
+            <h1>Lenguajes</h1>
+        </div>
+        
+        <div class="container-l">       
+            <div class="python">
+                <h2>Html</h2> 
+                <div>
+                    <img src="../SRC/htmlLogo.png" alt="">
+                </div>
+            </div>
+            <div class="java">
+                <h2>JavaScript</h2> 
+                <div>
+                    <img src="../SRC/jsLogo.png" alt="">
+                </div>
+            </div>
+            <div class="css">
+                <h2>Python</h2> 
+                <div>
+                    <img src="../SRC/pythonLogo.png" alt="">
+                </div>
             </div>
         </div>
-    </main>
+    </section>
+    <!--============Contacto==============-->
+    <section class="contacto">
+        <div class="titulo">
+            <h1>Contacto</h1>
+        </div>
+        
+        <div class="container-c">
+            <div>
+                <img src="../SRC/facebook.png" alt="">
+                <a href="">Facebook</a>
+                
+            </div>
+            <div>
+                <img src="../SRC/github.png" alt="">
+                <a href="">GitHub</a>
+                
+            </div>
+            <div>
+                <img src="../SRC/linkedin.png" alt="">
+                <a href="">LinkendIn</a>
+            </div>
+           
+        </div>
+    </section>
 </body>
 </html>
