@@ -6,23 +6,11 @@ body{
     background-color: rgb(129, 193, 197);
 }
 
-.absolute{
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    position: absolute;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    
-}
 /*=========== HEADER ==============*/
 header .container{
     text-align: center;
-    justify-content: center;
     text-decoration: none;
-    height: 100px;
+    height: 130px;
     background-image:url(../SRC/fondonav.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -33,8 +21,8 @@ header .container{
 .container div a{
     font-size: 25px;
 }
-.container div{
-    padding-top: 15px;
+.container div div{
+    padding-top: 10px;
 }
 .nav a{
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -47,7 +35,10 @@ a{
     text-decoration: none;
     color: aliceblue;
 }
-.nav{
+.encabezado .container{
+    padding-top: 30px;
+}
+.encabezado .container nav{
     padding-top: 20px;
 }
 /*============== SECTION INFO YO ==========*/
@@ -124,4 +115,34 @@ section h1{
 .container-c a{
     font-size: 20px;
     color: rgb(58, 58, 58);
+}
+@media (min-width: 700px) {
+    header .container{
+        display: flex;
+        justify-content: space-between;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        padding-right: 40px;
+    }
+    nav a{
+        padding: 45px 20px;
+    }
+    .encabezado .container{
+        padding-top: 0px;
+    }
+    .encabezado .container nav{
+        padding-top: 0px;
+    }
+
+    .container div a{
+        font-size: 30px;
+    }
+    .container div{
+        padding-top: 45px;
+        padding-left: 20px;
+
+    }
+
 }
