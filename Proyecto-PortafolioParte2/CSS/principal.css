@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{background-color: white;}
+/*------------Primera pagina-----------*/
+.container-1{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url(../SRC/fondoheader.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    font-family: monospace;
+    border-radius: 5px;
+}
+.logo{
+    font-size: 8vw;
+    padding-top: 3vw;
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+div nav a{
+    font-size: 4vw;
+    padding: 0vw 1vw;
+    margin-top: 15px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: white 1px solid;
+    border-radius: 10%;
+
+}
+div nav{
+    justify-content: center;
+    align-items: center;
+}
+/*------------Sobre Mi----------------*/
+.container-2{
+display: grid;
+grid-template-columns: 100vw;
+grid-template-rows: 8% 40% auto;
+justify-content: center;
+align-items: center;
+text-align: center;
+height: 100vh;
+width: 100vw;
+background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.3)
+    ),url(../SRC/fondo_pag_2.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+font-size: 4vw;
+color: white;
+border-radius: 5px;
+}
+.titulo-1{
+    font-family: monospace;
+    text-decoration: underline;
+    padding-top: 0px;
+    font-size: 40px;
+}
+.img-yo{
+    background-image: url(../SRC/yo.jpg);
+    height: 220px;
+    width: 220px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    opacity: 80%;
+    margin: 0px 21vw;
+    
+}
+.datos{
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-rows: auto auto;
+    text-align: center;
+    align-items: center;
+    margin: 5px 5px;
+}
+.saludo{
+    display: grid;
+    grid-template-rows: 40% 20% auto;
+    grid-template-columns: 100%;
+}
+.saludo h1{
+    font-size: 30px;
+    color:rgb(238, 232, 232)
+}
+
+.saludo .datos p{
+    margin: 10px;
+    font-size: 16px;
+    text-align: start;
+    color:rgb(226, 221, 221) ;
+}
+.saludo .description{margin: 10px;}
+/*-------------Proyectos----------*/
+.container-3{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 100vw;
+    grid-template-rows: 10% auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
+    ),url(../SRC/fondo_pag_3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    font-size: 4vw;
+}
+.titulo-2{
+    color:white;
+    font-family: monospace;
+    text-decoration: underline;
+    font-size: 40px;
+}
+.proyects{
+    display: grid;
+    grid-column: auto;
+    grid-template-rows: auto auto auto auto;
+    color:rgb(223, 219, 219)
+}
+.proyects a{
+    font-size: 22px;
+    color: white;
+}
+
+.proyects p{
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.img-proyect1 img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 90%;
+    height: 90%;
+    border-radius: 5px;
+    margin: 10px 10px 10px 10px;
+}
+/*--------------Contacto-----------*/
+.container-4{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-template-rows: 20% 50%;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
+    ),url(../SRC/fondo_pag_4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    font-size: 4vw;
+}
+.contactos{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+}
+.titulo-3{
+    color: white;
+    text-decoration: underline;
+    font-size: 40px;
+}
+.contactos a{
+    text-decoration: none;
+    color:white;
+    background-color: rgb(41, 40, 38);
+    border-radius: 5px;
+
+    margin: 10px 10px 0px 0px;
+}
+.contactos img{
+    height: 60px;
+    width: 60px;
+    margin-top: 30px;
+}
+
+footer p{color: white;}
+
+footer{margin-top: 150px;}
+
+@media screen and (min-width:380px){
+    .container{
+        width: 100%;
+    }
+    .logo{
+        font-size: 6vw;
+    }
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    div nav a{
+        font-size:30px;
+        margin: 10px 10px;
+    }
+}
