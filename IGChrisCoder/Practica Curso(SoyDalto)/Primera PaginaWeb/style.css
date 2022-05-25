@@ -1,0 +1,223 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*--------------HEADER-NavBar--------------------*/
+.container__header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #e7f3fd;
+}
+/*--------------MediaQuery--------------*/
+@media(max-width:670px){
+    .container__header{
+        width: 100%;
+        display: grid;
+        grid-template-rows: auto auto;
+        justify-content: center;
+    }
+}
+    .container__header-h1{
+        font-family: 'Dosis', sans-serif;
+        text-shadow: 10px 10px 6px rgb(73, 72, 72);
+        margin-left: 10px;
+        font-size: 40px;
+        letter-spacing: 10px;
+    }
+    /*--------------MediaQuery--------------*/
+    @media(max-width:670px){
+        .container__header-h1{
+            padding: 0px 0px;
+            margin: 0px 0px;
+            text-align: center;
+            font-size: 25px;
+        }
+    }
+    .container__header__nav{
+    }
+        .container__header__nav__ul{
+            display: flex;
+            list-style: none;
+            font-size: 30px;
+            margin-right: 20px;
+        }
+            .container__header__nav__ul-li{
+                margin: 0 10px;
+                text-shadow: 10px 10px 6px rgb(73, 72, 72);
+                border-radius: 5px;
+            }
+            .container__header__nav__ul-li:hover{
+                background-color: rgb(221, 255, 255);
+            }
+                .container__header__nav__ul-li-a{
+                    text-decoration: none;
+                    color: black;
+                    font-family: 'Dosis', sans-serif;
+
+                }
+                /*--------------MediaQuery--------------*/
+                @media(max-width:670px) {
+                    .container__header__nav__ul-li-a{
+                        font-size: 20px;
+                    }
+                }
+
+/*----------------Contenedor-Body---------------*/
+.container__article{
+    margin:  0 10px;
+    background-color: rgb(228, 230, 230);
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+/*--------------MediaQuery--------------*/
+@media screen and (max-width:1200px) {
+    .container__article{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+    }
+@media ( max-width:376px){
+    .container__article{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+}
+}
+    /*-----------------Articulo N°1--------------*/
+    .container__article__section1{
+        margin: 10px 5px;
+        background-color: white;
+    }
+        .container__article__section1-h1{
+            text-align: center;
+            font-size: 30px;
+            font-family: 'Alfa Slab One';
+            letter-spacing: 6px;
+            text-decoration: underline;
+        }
+        /*--------------MediaQuery--------------*/
+        @media(max-width:400px){
+            .container__article__section1-h1{
+                font-size: 15px;
+            }
+        }
+        .container__article__section1-table{
+            border: 1px solid;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            font-size: 25px;
+        }
+        /*--------------MediaQuery--------------*/
+        @media(max-width:375px) {
+            .container__article__section1-table{
+                font-size: 15px;
+            }
+        }
+        .container__article__section1-img{
+            width: 400px;
+            margin: 60px 100px;
+            box-shadow: 5px 5px 20px;
+        }
+        /*--------------MediaQuery--------------*/
+        @media(max-width:1200px) {
+            .container__article__section1-img{
+                margin-left: 25%;
+                width: 50%;
+            }
+        }
+        @media(max-width:376px) {
+            .container__article__section1-img{
+                width: 150px;
+                margin: 0;
+                margin-left: 23%;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+        /*-------------Arituclo N°2------------*/
+        .container__article__section2{
+            margin: 10px 5px;
+            background-color: white;
+        }
+        .container__article__section2-h1-1{
+            font-size: 30px;
+            text-align: center;
+            font-family: 'Alfa Slab One';
+            letter-spacing: 6px;
+            text-decoration: underline;
+        }
+        /*--------------MediaQuery--------------*/
+        @media(max-width:400px){
+            .container__article__section2-h1-1{
+                font-size: 15px;
+            }
+        }
+        .container__article__section2-p{
+            font-family: 'Chakra Petch', sans-serif;
+            margin: 0px 20px;
+        }
+        /*--------------MediaQuery--------------*/
+        @media(max-width:400px){
+            .container__article__section2-p{
+                font-size: 12px;
+            }
+        }
+        .container__article__section2-h1-2{
+            margin: 0px 20px;
+        }
+        .container__article__section2-ol{
+            list-style: circle;
+            margin: 0px 20px;
+        }
+            .container__article__section2-ol-li{
+                margin-left: 10%;
+            }
+        .container__article__section2-img{
+            width: 70%;
+            box-shadow: 5px 5px 20px;
+            margin: 20px  15%;
+            margin-bottom: 20px;
+        }
+        /*--------------MediaQuery--------------*/
+        @media(max-width:376px){
+            .container__article__section2-img{
+                width: 150px;
+                margin: 0;
+                margin-left: 23%;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+    /*--------------------Footer------------------*/
+    .container__footer{
+        margin: 0px 10px;
+        padding: 10px;
+        background-color: rgb(228, 230, 230);   
+    }
+        .container__footer__div{
+            background-color: white;
+            display: flex;
+            justify-content: space-around;
+
+            margin: 0;
+        }
+        .container__footer__div-h1{
+            padding: 10px;
+            background-color: transparent;
+            text-shadow: 10px 10px 7px;
+            font-size: 25px;
+        }
+        /*--------------MediaQuery--------------*/
+        @media(max-width:400px){
+            .container__footer__div-h1{
+                font-size: 15px;
+            }
+        }

@@ -3,46 +3,69 @@
 <head>
   <meta charset="utf-8">
   <title>HTML</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Chakra+Petch:ital,wght@1,300&family=Dosis:wght@200&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>  
-  <header>
-    <h1>ChrisCoder</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#descripcion">Descripcion</a></li>
-        <li><a href="#logo">Logo</a></li>
-      </ul>
-    </nav>
-  </header>
-  <table border="1px">
-    <tr>
-      <td>Nombre:</td>
-      <td>Edad:</td>
-      <td>Meta:</td>
-    </tr>
-    <tr>
-      <td>Christian</td>
-      <td>19</td>
-      <td>Desarrollador FullStack</td>
-    </tr>
-  </table>
-  <article>
-    <section id="descripcion">
-      <p>Hola Soy christian y mi meta es ser Desarrollador Full Stack, tengo una ruta de lenguajes para poder lograrlo.</p>
-      <h1>Por el momento solo los principales para poder llevar una base.</h1>
-      <ol>
-        <li>HTML-Completado</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-      </ol>
-    </section>
-    <section>
-      <h1>Logo de Imagen</h1>
-      <img id="logo" src="../HtmlFinalizado.PNG" width="700px">
-    </section>
-  </article>
+<body>
+  <div class="container">
+    <header class="container__header">
+      <h1 class="container__header-h1">ChrisCoder</h1>
+      <nav class="container__header__nav">
+        <ul class="container__header__nav__ul">
+          <li class="container__header__nav__ul-li">
+            <a class="container__header__nav__ul-li-a" href="#">Inicio</a>
+          </li>
+          <li class="container__header__nav__ul-li">
+            <a class="container__header__nav__ul-li-a" href="#descripcion">Descripcion</a>
+          </li>
+          <li class="container__header__nav__ul-li">
+            <a class="container__header__nav__ul-li-a" href="#logo">Logo</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <article class="container__article">
+      <section class="container__article__section1">
+        <h1 class="container__article__section1-h1">INFO</h1>
+        <table class="container__article__section1-table">
+          <tr class="container__article__section1-table-row1">
+            <td class="container__article__section1-table-row1-td1">Nombre:</td>
+            <td class="container__article__section1-table-row1-td2">Edad:</td>
+            <td class="container__article__section1-table-row1-td3">Meta:</td>
+          </tr>
+          <tr class="container__article__section1-table-row2">
+            <td class="container__article__section1-table-row2-td1">Christian</td>
+            <td class="container__article__section1-table-row2-td2">19</td>
+            <td class="container__article__section1-table-row2-td3">Desarrollador FullStack</td>
+          </tr>
+        </table>
+        <img class="container__article__section1-img" src="../../../Proyecto-PortafolioParte2/SRC/yo.jpg" alt="">
+      </section>
+      <section class="container__article__section2" id="descripcion">
+        <h1 class="container__article__section2-h1-1">Descripcion</h1>
+        <p class="container__article__section2-p">Hola Soy christian y mi meta es ser Desarrollador Full Stack, tengo una ruta de lenguajes para poder lograrlo.</p>
+        <h1 class="container__article__section2-h1-2">Por el momento solo los principales para poder llevar una base.</h1>
+        <ol class="container__article__section2-ol">
+          <li class="container__article__section2-ol-li">
+            HTML||Completado ✅
+          </li>
+          <li class="container__article__section2-ol-li">CSS</li>
+          <li class="container__article__section2-ol-li">JavaScript</li>
+        </ol>
+        <img class="container__article__section2-img" src="../../PracticaHTML(Capturas)/HtmlFinalizado.PNG" alt="">
+      </section>
+    </article>
+    <footer class="container__footer">
+      <div class="container__footer__div">
+        <h1 class="container__footer__div-h1">&copy;ChrisCoder</h1>
+        <h1 class="container__footer__div-h1">Todos los derechos reservados</h1>
+      </div>
+    </footer>
+  </div>  
 </body>
 </html>
