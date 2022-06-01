@@ -86,22 +86,24 @@
                 }
             }
 /*----------------SECTION 2----------------*/
-.container__article__section{
+.container__article__presentme{
     height: auto;
     width: 100%;
     align-items: center;
+    text-align: center;
     justify-content: center;
     justify-items: center;
-    background-color: rgba(200,215,215, .7);
+    background-color: rgba(184, 189, 189, 0.7);
 }
 /*Responsive tablet*/
 @media(min-width: 1000px){
-    .container__article__section{
-        display: grid;
-        grid-template-columns: auto auto auto;
+    .container__article__presentme{
+        position: relative;
+        height: 70vh;
     }
 }
-    .container__article__section-h1{
+    /*---------------------------------*/
+    .container__article__presentme-h1{
         text-align: center;
         padding-top: 40px;
         text-shadow: 7px 7px 7px;
@@ -109,50 +111,67 @@
     }
     /*Responsibe Android*/
     @media (min-width: 600px) {
-        .container__article__section-h1{
+        .container__article__presentme-h1{
             font-size: 35px;
             transition: all 1.5s;
         }
     }
     /*Responsive Tablet*/
     @media(min-width: 1000px) {
-        .container__article__section-h1{
-            padding-top: 10%;
+        .container__article__presentme-h1{
+            top: 150px;
+            left: 20px;
+            transition: all 1.5s;
+            position: absolute;
         }
     }
-    .container__article__section-p{
-        margin-top: 20px;
-        margin-left: 10vw;
+    @media(min-width:1200px){
+        .container__article__presentme-h1{
+            top: 250px;
+            left: 10vw;
+            font-size: 45px;
+        }
+    }
+    /*---------------------------------*/
+    .container__article__presentme-p{
         text-shadow: 7px 7px 7px;
         font-size: 18px;
     }
     /*Responsive Android*/
     @media (min-width: 600px) {
-        .container__article__section-p{
-            font-size: 28px;
+        .container__article__presentme-p{
+            font-size: 30px;
             transition: all 1.5s;
-
         }
     }
     /*Responsive Tablet*/
     @media(min-width: 1000px) {
-        .container__article__section-p{
+        .container__article__presentme-p{
+            top: 300px;
+            left: 70px;
+            transition: all 1.5s;
+            position: absolute;
+        }
+    }
+    @media(min-width:1200px){
+        .container__article__presentme-p{
+            top: 400px;
+            font-size: 35px;
+        }
+    }
+    /*------------------------------------*/
+    .container__article__presentme{
+        position: relative;
+    }
+    /*Responsive Tablet*/
+    @media(min-width:1000px){
+        .container__article__presentme{
             grid-area: 2;
-            margin-top: -60%;
+            padding: 0;
         }
     }
-    .container__article__section__div{
-        align-items: center;
-        text-align: center;
-    }
-        /*Responsive Tablet*/
-        @media(min-width:1000px){
-            .container__article__section__div{
-                grid-area: 2;
-                padding: 0;
-            }
-        }
-        .container__article__section__div-img{
+    /*--------------------------------*/
+        .container__article__presentme-img{
             width:70%;
             border-radius: 10px;
             margin-top: 30px;
@@ -161,19 +180,28 @@
         }
         /*Responsive Android*/
         @media (min-width:600px){
-            .container__article__section__div-img{
+            .container__article__presentme-img{
                 width: 50%;
                 transition: all 1.5s;
             }
         }
         /*Responsive Tablet*/
         @media(min-width:1000px) {
-            .container__article__section__div-img{
+            .container__article__presentme-img{
+                position: absolute;
                 margin: 0;
+                right: 10%;
+                top: 100px;
+                max-width: 600px;
+                width:40%;
+                border-radius: 10px;
+                margin-top: 30px;
+                opacity: .8;
+                box-shadow: 13px 6px 13px;
             }
         }
-
-    .container__article__section__icon{
+        /*-----------------------------------*/
+    .container__article__presentme__icon{
         text-align: center;
         display: grid;
         grid-template-columns: auto auto auto auto;
@@ -184,35 +212,39 @@
     }
     /*Responsive Android*/
     @media(min-width:600px){
-        .container__article__section__icon{
+        .container__article__presentme__icon{
             margin-top: 20px;
             transition: all 1.5s;
         }
     }
     /*Responsive Tablet*/
     @media (min-width:1000px){
-        .container__article__section__icon{
-            grid-area: 3;
+        .container__article__presentme__icon{
+            position: absolute;
+            top: 650px;
+            left: 30%;
+            margin: 0;
         }
     }
-        .container__article__section__icon i{
+        .container__article__presentme__icon i{
             font-size: 25px;
             width: 50px;
             margin: 0 5px;
             text-shadow: 10px 15px 15px;
             color: #444;
         }
-        .container__article__section__icon h1{
+        .container__article__presentme__icon h1{
             font-size: 15px;
             margin: 7px 5px;
             text-shadow: 2px 5px 5px;
             color: #444;
         }
         @media(min-width:600px){
-            .container__article__section__icon i{
+            .container__article__presentme__icon i{
                 font-size: 50px;
             }
-            .container__article__section__icon h1{
+            .container__article__presentme__icon h1{
                 font-size: 28px;
             }
         }
+        
